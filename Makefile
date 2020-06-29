@@ -8,14 +8,16 @@ build: build/private-build-plans.toml
 	cp -r ./build/dist/k-iosevka out/k.iosevka
 	cp -r ./build/dist/k-iosevka-term out/k.iosevka.term
 
+build/private-build-plans.toml: k.iosevka.toml
+	cp $< $@
+
+gen-preview: preview.png preview-italic.png
+
 preview.png: out/k.iosevka/ttf/k-iosevka-regular.ttf
 	./gen_preview $< $@
 
 preview-italic.png: out/k.iosevka/ttf/k-iosevka-italic.ttf
 	./gen_preview $< $@
-
-build/private-build-plans.toml: k.iosevka.toml
-	cp k.iosevka.toml $@
 
 setup:
 	wget $(ARCHIVE_URL)
@@ -30,4 +32,4 @@ clean:
 nuke: clean
 	rm -rf build/
 
-.PHONY: clean nuke build setup all
+.PHONY: clean nuke build setup gen-preview
