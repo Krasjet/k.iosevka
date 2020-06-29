@@ -1,0 +1,104 @@
+# Variant 1, for display
+[buildPlans.k-iosevka]
+family = "k.iosevka"
+design = [ "ss05"             # Fira Mono as base
+         , "v-asterisk-low"   # Operator style *
+         , "v-seven-crossbar" # 7 with cross bar
+         , "v-k-curly"        # Slightly curly k
+         , "v-f-serifed"      # Serif f
+         , "v-r-serifed"      # Serif r, as in original Fira Mono
+         , "no-ligation"      # Ligature is not cool
+         , "no-cv-ss"         # Don't generate extra styles
+         ]
+italic = [ "v-a-singlestorey" # Single storey a
+         , "v-f-tailed"       # Slanted f
+         , "v-g-singlestorey" # Single storey g
+         , "v-i-italic"       # Italic i
+         , "v-y-cursive"      # Italic y
+         , "v-k-cursive"      # Italic k
+         , "v-r-top-serifed"  # Serif y without buttom
+         , "v-four-semi-open-non-crossing"      # Alternative 4
+         ]
+
+# We only need 4 weights, probably less
+[buildPlans.k-iosevka.weights.light]
+shape = 300
+menu  = 300
+css   = 300
+
+[buildPlans.k-iosevka.weights.regular]
+shape = 400
+menu  = 400
+css   = 400
+
+[buildPlans.k-iosevka.weights.medium]
+shape = 500
+menu  = 500
+css   = 500
+
+[buildPlans.k-iosevka.weights.bold]
+shape = 700
+menu  = 700
+css   = 700
+
+# No oblique variant
+[buildPlans.k-iosevka.slants]
+upright = "normal"
+italic = "italic"
+
+# The wider one is normal to me
+[buildPlans.k-iosevka.widths.normal]
+shape = 576
+menu  = 7
+css   = "normal"
+
+# Variant 2, for terminal
+[buildPlans.k-iosevka-term]
+family = "k.iosevka.term"
+design = [ "ss05"             # Fira Mono as base
+         , "v-asterisk-low"   # Operator style *
+         , "v-seven-crossbar" # 7 with cross bar
+         , "v-k-curly"        # Slightly curly k
+         , "v-f-serifed"      # Serif f
+         , "v-r-serifed"      # Serif r, as in original Fira Mono
+         , "sp-fixed"         # No wide characters
+         , "no-cv-ss"         # Don't generate extra styles
+         ]
+italic = [ "v-a-singlestorey" # Single storey a
+         , "v-f-tailed"       # Slanted f
+         , "v-g-singlestorey" # Single storey g
+         , "v-i-italic"       # Italic i
+         , "v-y-cursive"      # Italic y
+         , "v-k-cursive"      # Italic k
+         , "v-r-top-serifed"  # Serif y without buttom
+         , "v-four-semi-open-non-crossing"      # Alternative 4
+         ]
+
+[buildPlans.k.iosevka.term.weights.light]
+shape = 300
+menu  = 300
+css   = 300
+
+[buildPlans.k.iosevka.term.weights.regular]
+shape = 400
+menu  = 400
+css   = 400
+
+[buildPlans.k.iosevka.term.weights.medium]
+shape = 500
+menu  = 500
+css   = 500
+
+[buildPlans.k.iosevka.term.weights.bold]
+shape = 700
+menu  = 700
+css   = 700
+
+[buildPlans.k.iosevka.term.slants]
+upright = "normal"
+italic = "italic"
+
+[buildPlans.k.iosevka.term.widths.normal]
+shape = 576
+menu  = 7
+css   = "normal"
