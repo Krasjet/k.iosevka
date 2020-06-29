@@ -1,11 +1,9 @@
 # k.iosevka
 
-A custom build of [Iosevka](https://typeof.net/Iosevka/) for personal use.
+A custom build of [Iosevka](https://typeof.net/Iosevka/) for personal use. A preview of the typeface can be found at [Julia as a CLI calculator](https://krasjet.com/rnd.wlk/julia/).
 
-<p align="center">
-  <img width=400 src="./preview.png">
-  <img width=400 src="./preview-italic.png">
-</p>
+![preview](./preview.png)
+![preview-italic](./preview-italic.png)
 
 ## Build
 
@@ -26,3 +24,9 @@ Then, use the makefile to take care of everything.
 $ make setup
 $ make build
 ```
+
+The output is in the `out` directory.
+
+## Nerd font patch
+
+The `term` variant is intended to be used in the terminal, and it is sometimes necessary

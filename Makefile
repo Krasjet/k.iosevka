@@ -46,11 +46,10 @@ nuke: clean
 
 gen-preview: preview.png preview-italic.png
 
-preview.png: out/k.iosevka/ttf/k-iosevka-regular.ttf
+preview.png: out/k.iosevka/ttf/k-iosevka-regular.ttf gen_preview
 	./gen_preview $< $@
 
-preview-italic.png: out/k.iosevka/ttf/k-iosevka-italic.ttf
+preview-italic.png: out/k.iosevka/ttf/k-iosevka-italic.ttf gen_preview
 	./gen_preview $< $@
-
 
 .PHONY: clean nuke build setup setup-nerd gen-preview install patch patch-mono
