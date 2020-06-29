@@ -9,6 +9,10 @@ calculator](https://krasjet.com/rnd.wlk/julia/).
 
 ## Build
 
+Compiled fonts can be found on the
+[release](https://github.com/Krasjet/k.iosevka/releases) page, but just in case
+you want to build it yourself:
+
 [npm](https://www.npmjs.com/),
 [ttfautohint](http://www.freetype.org/ttfautohint/),
 [otfcc](https://github.com/caryll/otfcc),
@@ -49,4 +53,4 @@ Then run the patcher by
 $ make setup-nerd
 $ make patch
 ```
-The patched fonts can be found in the `patched` directory.
+The patched fonts can be found in the `patched` directory. They are internally referenced by the name `k.iosevka.term Nerd Font`.
