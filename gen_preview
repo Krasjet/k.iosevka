@@ -1,0 +1,16 @@
+#!/bin/sh
+
+PREVIEW_TEXT="ABCDEFGHIJKLM\n"\
+"NOPQRSTUVWXYZ\n"\
+"abcdefghijklm\n"\
+"nopqrstuvwxyz\n"\
+"0123456789\n"\
+"!@&$\*\%(){}[]"
+
+convert -size "532x365" xc:"#ffffff" \
+        -gravity center \
+        -pointsize 38 \
+        -font "$1" \
+        -fill "#000000" \
+        -annotate +0+0 "$PREVIEW_TEXT" \
+        -flatten "$2"
