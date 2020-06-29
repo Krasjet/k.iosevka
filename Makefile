@@ -8,11 +8,14 @@ build: build/private-build-plans.toml
 	cp -r ./build/dist/k-iosevka out/k.iosevka
 	cp -r ./build/dist/k-iosevka-term out/k.iosevka.term
 
-preview.png:
-	./gen_preview out/k.iosevka/ttf/k-iosevka-regular.ttf preview.png
+preview.png: out/k.iosevka/ttf/k-iosevka-regular.ttf
+	./gen_preview $< $@
+
+preview-italic.png: out/k.iosevka/ttf/k-iosevka-italic.ttf
+	./gen_preview $< $@
 
 build/private-build-plans.toml: k.iosevka.toml
-	cp k.iosevka.toml build/private-build-plans.toml
+	cp k.iosevka.toml $@
 
 setup:
 	wget $(ARCHIVE_URL)
