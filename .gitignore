@@ -1,3 +1,5 @@
 *.tar.gz
 build/
 out/
+nerd/
+patched/
