@@ -10,9 +10,9 @@ A custom build of [Iosevka](https://typeof.net/Iosevka/) for personal use.
 
 [npm](https://www.npmjs.com/),
 [ttfautohint](http://www.freetype.org/ttfautohint/),
-[otfcc](https://github.com/caryll/otfcc)
+[otfcc](https://github.com/caryll/otfcc),
 [AFDKO](https://adobe-type-tools.github.io/afdko/AFDKO-Overview.html) are
-required to build this typeface. If you are using Archlinux, they can be
+required to build this typeface. If you are using Arch Linux, they can be
 installed on AUR.
 
 ```bash
