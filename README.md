@@ -1,6 +1,8 @@
 # k.iosevka
 
-![](./preview.png)
+<p align="center">
+  <img width=500 src="./preview.png">
+</p>
 
 A custom build of [Iosevka](https://typeof.net/Iosevka/) for personal use.
 
