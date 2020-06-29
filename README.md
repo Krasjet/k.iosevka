@@ -1,11 +1,11 @@
 # k.iosevka
 
+A custom build of [Iosevka](https://typeof.net/Iosevka/) for personal use.
+
 <p align="center">
   <img width=400 src="./preview.png">
   <img width=400 src="./preview-italic.png">
 </p>
-
-A custom build of [Iosevka](https://typeof.net/Iosevka/) for personal use.
 
 ## Build
 
