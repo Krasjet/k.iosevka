@@ -62,4 +62,7 @@ preview.png: out/k.iosevka/ttf/k-iosevka-regular.ttf gen_preview
 preview-italic.png: out/k.iosevka/ttf/k-iosevka-italic.ttf gen_preview
 	./gen_preview $< $@
 
+archive:
+	tar caf k.iosevka-$(VERSION).tar.gz out/ patched iosevka_license
+
 .PHONY: clean nuke build setup setup-nerd gen-preview install patch patch-mono
