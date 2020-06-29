@@ -1,13 +1,9 @@
 #!/bin/sh
 
-PREVIEW_TEXT="ABCDEFGHIJKLM\n"\
-"NOPQRSTUVWXYZ\n"\
-"abcdefghijklm\n"\
-"nopqrstuvwxyz\n"\
-"0123456789\n"\
-"!@&$\*\%(){}[]"
+PREVIEW_TEXT="@real fox.quick(h){ *is_brown && it_jumps_over(dogs.lazy) }\n"\
+"0123456789 ABC.DEF.GHI.JKL.MNO.PQRS.TUV.WXYZ ß <= ¶^\$#\% >="\
 
-convert -size "532x365" xc:"#ffffff" \
+convert -size "1400x200" xc:"#ffffff" \
         -gravity center \
         -pointsize 38 \
         -font "$1" \
