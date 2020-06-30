@@ -42,6 +42,8 @@ patch-mono: nerd/font-patcher out/k.iosevka.term/ttf/
 install:
 	mkdir -p ~/.local/share/fonts/k.iosevka.term/
 	cp -Rf ./patched/*.ttf ~/.local/share/fonts/k.iosevka.term/
+	mkdir -p ~/.local/share/fonts/k.iosevka/
+	cp -Rf ./out/k.iosevka/ttf/*.ttf ~/.local/share/fonts/k.iosevka/
 	fc-cache -vf
 
 clean:
