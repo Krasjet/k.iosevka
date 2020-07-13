@@ -32,11 +32,13 @@ setup-nerd:
 
 # Patch in symbols
 patch: nerd/font-patcher out/k.iosevka.term/ttf/
-	find out/k.iosevka.term/ttf/ -name '*.ttf' | xargs -n 1 -P 0 ./nerd/font-patcher -c -out ./patched/ 2>/dev/null
+	find out/k.iosevka.term/ttf/ -name '*.ttf' | \
+		xargs -n 1 -P 0 ./nerd/font-patcher -c -out ./patched/ 2>/dev/null
 
 # This version will scale wide symbols to be monospace, but I don't like it
 patch-mono: nerd/font-patcher out/k.iosevka.term/ttf/
-	find out/k.iosevka.term/ttf/ -name '*.ttf' | xargs -n 1 -P 0 ./nerd/font-patcher --mono -c -out ./patched/ 2>/dev/null
+	find out/k.iosevka.term/ttf/ -name '*.ttf' | \
+		xargs -n 1 -P 0 ./nerd/font-patcher --mono -c -out ./patched/ 2>/dev/null
 
 # Install patched fonts
 install:
