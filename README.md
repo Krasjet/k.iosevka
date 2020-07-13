@@ -1,5 +1,5 @@
 k.iosevka
----------
+=========
 
 A custom build of [Iosevka][iosevka] for personal use. A preview of the
 typeface can be found at [Julia as a CLI calculator][julia]
@@ -8,7 +8,7 @@ typeface can be found at [Julia as a CLI calculator][julia]
 ![preview-italic](./preview-italic.png)
 
 Build
-=====
+-----
 
 The compiled fonts can be found on the [release][release] page, but just in
 case you want to build it yourself, here is the instructions:
@@ -31,7 +31,7 @@ $ make build
 The output is in the `out` directory.
 
 Nerd fonts patch
-================
+----------------
 
 The `term` variant is intended to be used in the terminal, and it is sometimes
 necessary to patch the font with [Nerd fonts][nerd] to add additional symbols
