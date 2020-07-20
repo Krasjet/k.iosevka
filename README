@@ -1,0 +1,50 @@
+k.iosevka
+=========
+
+A custom build of Iosevka [1] for personal use. A preview of the typeface can
+be found at Julia as a CLI calculator [2].
+
+Build
+-----
+
+The compiled fonts can be found on the release [3] page, but just in case you
+want to build it yourself, here is the instructions:
+
+First, npm, ttfautohint, otfcc, AFDKO are required to build this typeface. If
+you are using Arch Linux and yay, the dependencies can be installed via AUR.
+
+    $ yay -S npm otfcc ttfautohint afdko
+
+Then, use the makefile to take care of everything.
+
+    $ make setup
+    $ make build
+
+The output is in the `out` directory.
+
+Nerd fonts patch
+----------------
+
+The term variant is intended to be used in the terminal, and it is sometimes
+necessary to patch the font with Nerd fonts [4] to add additional symbols for
+various terminal applications.
+
+Fontforge and subversion are required to apply the patch.  I'm using subversion
+here only because it is a pain to download a single folder from GitHub. Follow
+the instruction in `Makefile` if you want to use git instead. Otherwise,
+install the dependencies via
+
+    $ yay -S fontforge subversion
+
+Then run the patcher by
+
+    $ make setup-nerd
+    $ make patch
+
+The patched fonts can be found in the `patched` directory. They are internally
+referenced by the name `k.iosevka.term Nerd Font`.
+
+[1]: https://typeof.net/Iosevka/
+[2]: https://krasjet.com/rnd.wlk/julia/
+[3]: https://github.com/Krasjet/k.iosevka/releases
+[4]: https://github.com/ryanoasis/nerd-fonts
